@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>afrix54</title>
     <link rel="stylesheet"href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -13,17 +13,37 @@
     <div class="  min-h-screen p-5">
             <div class="relative h-64 w-full">
                 <!-- Background image -->
-                <div class="absolute inset-0 bg-[url('./images/tomato.jpg')] bg-cover bg-center rounded-br-full p-5 "></div>
+                <div class="absolute inset-0 bg-[url('./images/tomato.jpg')] bg-cover bg-center rounded-b-lg p-5 "></div>
               
                 <!-- Overlay with opacity -->
-                <div class="absolute inset-0 bg-black bg-opacity-70   rounded-br-full p-5 "></div>
+                <div class="absolute inset-0 bg-black bg-opacity-80   rounded-b-lg p-5 "></div>
               
                 <!-- Your content stays visible and clear -->
                 <div class="relative z-10 p-4 text-white  ">
-                 
-
-                  <h1 class="text-2xl font-bold">Hello World</h1>
-                  <p>This text won't be affected by the background opacity.</p>
+                 <header class="bg-[#FFFFFF30] rounded-lg peer-checked:absolute ">
+                    <div class="relative max-w-screen-lg py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"> 
+                        <a class="flex items-center font-bold font-white"href="/">
+                            <span class="mr-2"><img src="./images/logo.jpg"class="w-20 ml-2 rounded-full"></span>
+                            <span >Afrix54 Enterprise</span>
+                           </a>
+                          <input class="peer hidden"type="checkbox"id="navbar-open"> 
+                          <label  class="p-5 sm:hidden cursor-pointer text-xl absolute right-0"for="navbar-open">
+                            <i class="fa-solid fa-bars"></i>
+                          </label>
+                         
+                           <nav class="peer-checked:block hidden mt-8 sm:mt-8  sm:block sm:bg-none">
+                               <ul class="items-center  gap-y-4 flex flex-col sm:flex-row  flex sm:gap-x-8 px-5 py-2 bg-green-500 rounded-lg">
+                                <li class="hover:text-orange-700 "><a href="#">HOME</a></li>
+                                <li class="hover:text-orange-700 "><a href="#">ABOUT</a></li>
+                                <li class="hover:text-orange-700 "><a href="#">SERVICES</a></li>
+                                <li class="hover:text-orange-700 "><a href="#">CONTACT</a></li>
+                               </ul>
+                           </nav>
+                    </div>
+                   
+                 </header>
+                  
+        
                 </div>
               </div>
               
@@ -35,5 +55,12 @@
 
         </footer>
     </div>
+    <script>
+        const togglebutton=document.querySelector(".toggle-button");
+        const dropmenu=document.querySelector(".dropdown-menu");
+        togglebutton.addEventListener("click", ()=>{
+            dropmenu.classList.toggle('top-64');
+        })
+    </script>
 </body>
 </html>
