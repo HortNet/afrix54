@@ -149,7 +149,7 @@ investors
   </section>
 
   <section class="bg-black w-full   relative overflow-hidden p-5">
-    <h1 class="text-xl font-bold text-center my-12 w-full border border-orange-600 rounded-full bg-green-950"> <i class="fas fa-tools"></i><pre>  Services </pre></h1>
+    <h1 class="text-xl font-bold text-center my-12 w-full border-t-4 border-green-500 rounded-t-full bg-green-800"> <i class="fas fa-tools"></i><pre>  Services </pre></h1>
     <div class="sm:grid grid-cols-3">
        
         <div class="overflow-hidden w-full max-w-[400px] h-[250px] rounded-lg border py-5">
@@ -170,29 +170,32 @@ investors
     
   </section >
 <section class="w-full  items-center relative overflow-hidden p-5">
+  <div class="grid sm:grid-cols-3">
     <div class="">
-<button id="BmodelToggle" class="bg-green-600 p-5 m-12 rounded-lg font-bold bg-gradient-to-r from-green-500 to-orange-500 ">BUSINESS MODEL</button>
-    </div>
-    <div class="bg-orange-500 p-5 rounded-lg items-center shadow-white shadow-md hidden"id="Bmodel">
-      <p>
-        AFRIX54 operates a hybrid business model combining direct services, contract farming, 
-diaspora investment management, and product value addition. 
-      </p>
-      <h1 class="text-xl">
-        Revenue Streams: 
-      </h1>
-      <ul class="list-disc list-inside">
-        <li>Diaspora Farm Management fees & commission</li>
-        <li>Produce sales (bulk & retail) </li>
-        <li>Consultancy and training services </li>
-        <li>Agro-processing and product exports</li>
-        <li>Agritourism & on-farm events</li>
-        
-
-      </ul>
-    </div>
-    <div class="bg-gradient-to-t from-black to-orange-500 h-48 w-full p-5 grid sm:grid-cols-2">
-      <div class=" my-5">
+      <button id="BmodelToggle" class="bg-green-600 p-5 m-12 rounded-lg font-bold bg-gradient-to-r from-green-500 to-orange-500 ">BUSINESS MODEL</button>
+          </div>
+          <div class="bg-green-900 p-5 rounded-b-2xl items-center hidden"id="Bmodel">
+            <p>
+              AFRIX54 operates a hybrid business model combining direct services, contract farming, 
+      diaspora investment management, and product value addition. 
+            </p>
+            <h1 class="text-xl">
+              Revenue Streams: 
+            </h1>
+            <ul class="list-disc list-inside">
+              <li>Diaspora Farm Management fees & commission</li>
+              <li>Produce sales (bulk & retail) </li>
+              <li>Consultancy and training services </li>
+              <li>Agro-processing and product exports</li>
+              <li>Agritourism & on-farm events</li>
+              
+      
+            </ul>
+          </div>
+  </div>
+   
+    <div class="bg-gradient-to-t from-black to-orange-500  w-full p-5 grid sm:grid-cols-2 ">
+      <div class="  my-5">
         <h1 class="font-bold">Key Partners:</h1>
         <ul class="list-disc list-inside">
         <li>Government agencies & NGOs</li>
@@ -228,24 +231,9 @@ diaspora investment management, and product value addition.
         });
       });
 
-      $(document).ready(function(){
-        $("#seemore1").click(function(){
-          $("#container1").toggle(); // This will show/hide the element
-        });
-      });
+    
 
-      $(document).ready(function(){
-        $("#seemore2").click(function(){
-          $("#container2").toggle(); // This will show/hide the element
-        });
-      });
-
-      $(document).ready(function(){
-        $("#seemore3").click(function(){
-          $("#container3").toggle(); // This will show/hide the element
-        });
-      });
-      
+  
    
 
     </script>
