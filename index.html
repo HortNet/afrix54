@@ -124,8 +124,9 @@ agricultural challenges from both a local and global lens
      <li>
        Integrity : We uphold transparency, accountability, and ethical practices in everything we 
 do.
-
+      <span class="block sm:hidden"><H1 id="corebut"class="text-orange-500"><a href="#corebut">See more</a></H1></span>
      </li>
+     <span class="hidden sm:block"id="corevalues">
      <li>Innovation : We embrace technology and new ideas to solve complex agricultural 
         challenges
     </li>
@@ -140,7 +141,7 @@ circular agriculture.
      <li>
        Partnership :  We believe in collaborative growth with stakeholders, communities, and 
 investors
-     </li>
+     </li></span>
     </ol>
     
        
@@ -170,11 +171,11 @@ investors
     
   </section >
 <section class="w-full  items-center relative overflow-hidden p-5">
-  <div class="grid sm:grid-cols-3">
+  <div class="  grid sm:grid-cols-3 ">
     <div class="">
-      <button id="BmodelToggle" class="bg-green-600 p-5 m-12 rounded-full font-bold bg-gradient-to-r from-green-500 to-orange-500 ">BUSINESS MODEL</button>
+      <button id="BmodelToggle" class="bg-green-600 p-5 py-4 m-12 rounded-full font-bold bg-gradient-to-r from-green-500 to-orange-500 ">BUSINESS MODEL</button>
           </div>
-          <div class="bg-green-900 p-5 rounded-b-2xl items-center hidden"id="Bmodel">
+          <div class="bg-green-900 opacity-75 transition-opacity  p-5 rounded-b-2xl items-center hidden"id="Bmodel">
             <p>
               AFRIX54 operates a hybrid business model combining direct services, contract farming, 
       diaspora investment management, and product value addition. 
@@ -194,7 +195,7 @@ investors
           </div>
   </div>
    
-    <div class="bg-gradient-to-t from-black to-orange-500  w-full p-5 grid sm:grid-cols-2 ">
+    <div class="bg-gradient-to-t  from-black to-orange-500  w-full p-5 grid sm:grid-cols-2 ">
       <div class="  my-5">
         <h1 class="font-bold">Key Partners:</h1>
         <ul class="list-disc list-inside">
@@ -228,6 +229,13 @@ investors
       $(document).ready(function(){
         $("#BmodelToggle").hover(function(){
           $("#Bmodel").toggle(); // This will show/hide the element
+        });
+      });   
+
+      $(document).ready(function(){
+        $("#corebut").click(function(){
+           $("#corevalues").toggle();
+           $("#corebut").hide();
         });
       });
 
