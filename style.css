@@ -1132,6 +1132,10 @@ video {
   .sm\:bg-none {
     background-image: none;
   }
+
+  .sm\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 768px) {
